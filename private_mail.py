@@ -8,6 +8,7 @@ import time
 import subprocess
 import sys
 import pkg_resources
+from telegram import private
 
 purple = '\x1b[38;5;165m'
 blue = '\x1b[38;5;33m'
@@ -99,7 +100,7 @@ def checkMails():
         print_statusline(f"You received {length} {x}. (Enjoy!!!!.)")
 
         current_directory = os.getcwd()
-        final_directory = os.path.join(current_directory, r'All Mails')
+        final_directory = os.path.join(current_directory, r'Inbox')
         if not os.path.exists(final_directory):
             os.makedirs(final_directory)
 
@@ -153,9 +154,7 @@ except(KeyboardInterrupt):
     deleteMail()
     print("\nProgramme Interrupted")
     os.system('cls' if os.name == 'nt' else 'clear')
-
-
-
+    private();
 
 
 
